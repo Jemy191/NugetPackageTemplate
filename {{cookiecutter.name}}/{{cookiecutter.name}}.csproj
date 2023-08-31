@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
+        
+        <PackageId>{{cookiecutter.name}}</PackageId>
+        <Title>{{cookiecutter.name}}</Title>
+        <Authors>Émilie Collard</Authors>
+        <Description>{{cookiecutter.description}}</Description>
+        <PackageTags>{{cookiecutter.tags}}</PackageTags>
+        <PackageProjectUrl>https://github.com/TheJemy191/{{cookiecutter.name}}</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TheJemy191/{{cookiecutter.name}}</RepositoryUrl>
+        <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+        <RepositoryType>Github</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RootNamespace>{{cookiecutter.name}}</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>

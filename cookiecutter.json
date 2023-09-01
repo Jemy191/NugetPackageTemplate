@@ -1,5 +1,8 @@
 {
     "name": "choose_project_name",
     "description": "choose_project_name",
-    "tags": "choose_project_name"
+    "tags": "choose_project_name",
+        "_copy_without_render": [
+        ".github/*"
+    ]
 }

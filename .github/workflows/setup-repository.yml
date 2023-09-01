@@ -80,7 +80,6 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
           git config --global user.name "github-actions[bot]" && \
           git checkout --orphan temp-branch && \
-          rm -rf .github/workflows/setup-repository.yml && \ 
           git add . && \
           git commit -m 'Initial commit' && \
           git push origin temp-branch:main -f
